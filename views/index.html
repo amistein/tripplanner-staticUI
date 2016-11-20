@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Welcome to Amrom's Trip Planner!</h1>
+  <select name="hotels">
+    {% for hotel in hotels %}
+    <option value={{hotel.name}}>{{hotel.name}}</option>
+    {% endfor %}
+  </select>
+  <select name="restaurants">
+    {% for restaurant in restaurants %}
+    <option value={{restaurnt.name}}>{{restaurant.name}}</option>
+    {% endfor %}
+  </select>
+  <select name="hotels">
+    {% for activity in activities %}
+    <option value={{activity.name}}>{{activity.name}}</option>
+    {% endfor %}
+  </select>
+
+{% endblock %}

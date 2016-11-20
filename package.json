@@ -1,0 +1,28 @@
+{
+  "name": "trip-planner-staticUI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:prodoction": "node app.js",
+    "start:dev": "nodemon -e html,css,js app.js",
+    "start": "npm run start:dev",
+    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nunjucks": "^3.0.0",
+    "pg": "^6.1.0",
+    "sequelize": "^3.27.0",
+    "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  }
+}
